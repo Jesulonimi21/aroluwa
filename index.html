@@ -1,0 +1,57 @@
+<html>
+<head>
+<style>
+	body{
+    background-color: lightgoldenrodyellow;
+    color: darkgreen;
+}
+a{
+    color: darkgreen;
+}
+a:hover{
+    font-size: large;
+    color: darkcyan;
+}
+feildset{
+    color: darkgreen;
+}
+</style>
+
+
+</head>
+<body>
+    <h1>Calculator</h1>
+    <fieldset>
+<form>
+<label>Enter your 1<sup>st</sup>number</label><input type="number" value="number 1"  placeholder="TYPE IN YOUR NUMBER HERE!" id="n1"><br>
+<label>Enter your 2<sup>nd</sup>number</label><input type="number" value="number 2" placeholder="TYPE IN YOUR NUMBER HERE!" id="n2"><br>
+<input type="button" value="Add"  onclick="add()">
+<input type="button" value="Subtract"  onclick="subtract()">
+<input type="button" value="Multiply"  onclick="multiply()"><br>
+<input type="button" value="Divide"  onclick="Divide()"><br>
+<input type="number" value="number " placeholder="HERE IS YOUR RESULT!" id="b1">
+</fieldset>
+<script>
+	function add(){
+   let n1=parseInt (document.getElementById("n1").value)
+   let n2=parseInt (document.getElementById("n2").value)
+   document.getElementById("b1").value=n1+n2
+}
+function subtract(){
+   let n1=parseInt (document.getElementById("n1").value)
+   let n2=parseInt (document.getElementById("n2").value)
+   document.getElementById("b1").value=n1-n2
+}
+function multiply(){
+   let n1=parseInt (document.getElementById("n1").value)
+   let n2=parseInt (document.getElementById("n2").value)
+   document.getElementById("b1").value=n1*n2
+}
+function Divide(){
+   let n1=parseInt (document.getElementById("n1").value)
+   let n2=parseInt (document.getElementById("n2").value)
+   document.getElementById("b1").value=n1/n2
+}
+</script>
+</body>
+</html>
